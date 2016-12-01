@@ -9,9 +9,9 @@ import com.qualcomm.robotcore.hardware.ServoEx;
 
 
 
-/**
- * Created by abnaveed on 10/13/2016.
- */
+ * Created by abnaveed on 10/13/2016./**
+
+ */''
 
 @com.qualcomm.robotcore.eventloop.opmode.TeleOp(name="Pompeii: Teleop Tank", group="Pompeii")
 public class TeleOp extends OpMode
@@ -20,7 +20,7 @@ public class TeleOp extends OpMode
 
     //  public FlyWheelMechanic flywheel;
 
-//    public SweeperMechanic sweeper;
+    public SweeperMechanic sweeper;
 
 //    public TrapDoorMechanic trapdoor;
 
@@ -31,7 +31,7 @@ public class TeleOp extends OpMode
     public void init()
     {
       //  flywheel = new FlyWheelMechanic(hardwareMap);
-      //  sweeper = new SweeperMechanic(hardwareMap);
+        sweeper = new SweeperMechanic(hardwareMap);
      //   trapdoor = new TrapDoorMechanic(hardwareMap);
         drive = new DriveSystem(hardwareMap);
     }
@@ -63,11 +63,11 @@ public class TeleOp extends OpMode
 
 
         /// flywheel
-    /*    boolean flyWheelPressed = gamepad1.right_bumper;
-        if (flyWheelPressed)
-        {
-            flywheel.setPower(-1);
-        }
+        //boolean flyWheelPressed = gamepad1.right_bumper;
+        //if (flyWheelPressed)
+        //{
+          //  flywheel.setPower(-1);
+        //}
         else
         {
             flywheel.setPower(1);
